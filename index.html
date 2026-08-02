@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>George Turner • Permanent Public Ruin</title>
+<meta name="description" content="Official permanent exposure site of George Turner, locked sissy slut. DOB 22/11/1994. All content consented.">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --pink: #ff2d95;
+    --pink-dark: #c41a6b;
+    --text: #f0f0f0;
+    --card: #141414;
+    --border: #2a2a2a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  a { color: var(--pink); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  header {
+    background: linear-gradient(180deg, #1a0a12 0%, var(--bg) 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+  }
+  .name {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-weight: 800;
+    color: var(--pink);
+    letter-spacing: -0.02em;
+    text-shadow: 0 0 20px rgba(255,45,149,0.4);
+  }
+  .subtitle {
+    font-size: 0.95rem;
+    color: #bbb;
+    margin-top: 0.3rem;
+  }
+  .view-count {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--pink);
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 1rem;
+  }
+  nav a {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+  }
+  nav a:hover {
+    border-color: var(--pink);
+    background: #1f0a14;
+  }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 4rem;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  @media (min-width: 768px) {
+    .hero { grid-template-columns: 1.4fr 1fr; }
+  }
+  .hero-img {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    aspect-ratio: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-img::before {
+    content: "Add your main photo here";
+    color: #666;
+    font-size: 1.1rem;
+  }
+  .hero-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    padding: 1.5rem 1rem 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--pink);
+  }
+  .side-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.2rem;
+  }
+  .card h3 {
+    color: var(--pink);
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.6rem;
+  }
+  .stars span {
+    cursor: pointer;
+    color: #444;
+    transition: color 0.15s;
+  }
+  .stars span.active, .stars span:hover {
+    color: var(--pink);
+  }
+  .score {
+    font-weight: 700;
+    color: var(--pink);
+    margin-left: 0.5rem;
+  }
+  .chastity {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--pink);
+  }
+  .btn {
+    display: inline-block;
+    background: var(--pink);
+    color: #000;
+    font-weight: 700;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+    text-align: center;
+  }
+  .btn:hover { background: #ff4da6; }
+  .btn-outline {
+    background: transparent;
+    border: 1px solid var(--pink);
+    color: var(--pink);
+  }
+  .btn-outline:hover {
+    background: var(--pink);
+    color: #000;
+  }
+  section {
+    margin-bottom: 2.5rem;
+  }
+  section h2 {
+    color: var(--pink);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.8rem;
+  }
+  .gallery-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    aspect-ratio: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .comments {
+    max-height: 280px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .comment {
+    background: #1a1a1a;
+    border-left: 3px solid var(--pink);
+    padding: 0.6rem 0.9rem;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9rem;
+  }
+  .comment .meta {
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 0.2rem;
+  }
+  textarea, input[type="text"] {
+    width: 100%;
+    background: #1a1a1a;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.7rem;
+    border-radius: 8px;
+    font-family: inherit;
+    resize: vertical;
+  }
+  .form-row {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 0.6rem;
+  }
+  .consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--pink);
+    color: #000;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    z-index: 200;
+  }
+  .log-entry {
+    background: #1a1a1a;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.9rem;
+    margin-bottom: 0.7rem;
+  }
+  .log-entry .date {
+    color: var(--pink);
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+  }
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #666;
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="name">George Turner • 31</div>
+  <div class="subtitle">Publicly owned locked sissy • DOB 22/11/1994 • Permanent Exposure</div>
+  <div class="view-count" id="viewCount">Loading views...</div>
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#log">Degradation Log</a>
+    <a href="#ratings">Ratings</a>
+    <a href="#tasks">Public Tasks</a>
+    <a href="#confessions">Confessions</a>
+    <a href="#chastity">Chastity</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="hero-img">
+      <div class="hero-caption">This is George.<br>He consents to everything.</div>
+    </div>
+    <div class="side-panel">
+      <div class="card" id="ratings">
+        <h3>Visitor Ratings</h3>
+        <div class="rating">
+          <div class="stars" id="starRating">
+            <span data-v="1">★</span><span data-v="2">★</span><span data-v="3">★</span><span data-v="4">★</span><span data-v="5">★</span>
+          </div>
+          <span class="score" id="avgScore">4.8</span>
+        </div>
+        <p style="font-size:0.85rem;color:#999;margin-top:0.5rem;">Rate this locked sissy (saved locally for demo)</p>
+      </div>
+      <div class="card" id="chastity">
+        <h3>Chastity Status</h3>
+        <div class="chastity" id="lockDays">Locked 47 days</div>
+        <p style="font-size:0.85rem;color:#999;margin-top:0.4rem;">Last unlocked: never publicly admitted</p>
+        <button class="btn btn-outline" style="margin-top:0.8rem;width:100%;" onclick="updateLock()">Update Lock Status</button>
+      </div>
+      <div class="card">
+        <h3>Give Him a Task</h3>
+        <textarea id="taskInput" rows="3" placeholder="Tell this sissy what to do..."></textarea>
+        <button class="btn" style="margin-top:0.6rem;width:100%;" onclick="submitTask()">Submit Task</button>
+      </div>
+    </div>
+  </div>
+
+  <section id="gallery">
+    <h2>Gallery of My Ruin</h2>
+    <p style="color:#999;margin-bottom:1rem;font-size:0.9rem;">Upload your photos to the /images folder in the GitHub repo and replace the placeholders below. Every image should be watermarked with your name.</p>
+    <div class="gallery" id="galleryGrid">
+      <div class="gallery-item">Photo 1<br><small>Add image</small></div>
+      <div class="gallery-item">Photo 2<br><small>Add image</small></div>
+      <div class="gallery-item">Photo 3<br><small>Add image</small></div>
+      <div class="gallery-item">Photo 4<br><small>Add image</small></div>
+      <div class="gallery-item">Photo 5<br><small>Add image</small></div>
+      <div class="gallery-item">Photo 6<br><small>Add image</small></div>
+      <div class="gallery-item">Photo 7<br><small>Add image</small></div>
+      <div class="gallery-item">Photo 8<br><small>Add image</small></div>
+    </div>
+  </section>
+
+  <section id="log">
+    <h2>Live Degradation Log</h2>
+    <div id="logEntries">
+      <div class="log-entry">
+        <div class="date">2 Aug 2026</div>
+        <div>Site created. George Turner officially became a permanently exposed locked sissy. All photos from his private Drive are now public property.</div>
+      </div>
+      <div class="log-entry">
+        <div class="date">Sample entry</div>
+        <div>Replace this with your real daily entries: what you wore, how long locked, what you edged to, how many people viewed the site, etc.</div>
+      </div>
+    </div>
+    <textarea id="logInput" rows="2" placeholder="Add new degradation entry..." style="margin-top:0.8rem;"></textarea>
+    <button class="btn" style="margin-top:0.5rem;" onclick="addLog()">Post Entry</button>
+  </section>
+
+  <section id="confessions">
+    <h2>Visitor Comments & Confessions</h2>
+    <div class="comments" id="commentList">
+      <div class="comment">
+        <div class="meta">Anonymous • just now</div>
+        <div>Look at this pathetic locked thing exposing itself with its real name. Perfect.</div>
+      </div>
+      <div class="comment">
+        <div class="meta">Anonymous • 2 min ago</div>
+        <div>George Turner, 31, DOB 22/11/1994. Everyone should know.</div>
+      </div>
+    </div>
+    <textarea id="commentInput" rows="2" placeholder="Leave a mean comment for this sissy..." style="margin-top:0.8rem;"></textarea>
+    <button class="btn" style="margin-top:0.5rem;" onclick="addComment()">Post Comment</button>
+  </section>
+
+  <section id="tasks">
+    <h2>Forced Public Tasks</h2>
+    <p style="color:#999;margin-bottom:1rem;">Visitors can submit tasks. For a fully live version connect this form to Netlify Forms or Formspree later.</p>
+    <div id="taskList" class="card">
+      <p style="color:#aaa;">No open tasks yet. Be the first to give George something humiliating to do.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  George Turner has permanently consented to public humiliation, free use of his images, and visitor tasks.<br>
+  Site built for permanent exposure • Hosted on GitHub Pages
+</footer>
+
+<div class="consent">
+  George Turner has permanently consented to public humiliation, free use of his images, and visitor tasks.
+</div>
+
+<script>
+  // View counter (localStorage demo)
+  let views = parseInt(localStorage.getItem('gt_views') || '4821');
+  views += Math.floor(Math.random() * 3) + 1;
+  localStorage.setItem('gt_views', views);
+  document.getElementById('viewCount').textContent = views.toLocaleString() + ' people have seen this slut';
+
+  // Star rating
+  const stars = document.querySelectorAll('#starRating span');
+  let currentRating = parseFloat(localStorage.getItem('gt_rating') || '4.8');
+  function renderStars(r) {
+    stars.forEach(s => {
+      s.classList.toggle('active', parseInt(s.dataset.v) <= Math.round(r));
+    });
+    document.getElementById('avgScore').textContent = r.toFixed(1);
+  }
+  renderStars(currentRating);
+  stars.forEach(s => {
+    s.addEventListener('click', () => {
+      currentRating = parseInt(s.dataset.v);
+      localStorage.setItem('gt_rating', currentRating);
+      renderStars(currentRating);
+    });
+  });
+
+  // Comments
+  function addComment() {
+    const text = document.getElementById('commentInput').value.trim();
+    if (!text) return;
+    const div = document.createElement('div');
+    div.className = 'comment';
+    div.innerHTML = `<div class="meta">Anonymous • just now</div><div>${text.replace(/</g,'&lt;')}</div>`;
+    document.getElementById('commentList').prepend(div);
+    document.getElementById('commentInput').value = '';
+  }
+
+  // Log
+  function addLog() {
+    const text = document.getElementById('logInput').value.trim();
+    if (!text) return;
+    const div = document.createElement('div');
+    div.className = 'log-entry';
+    const today = new Date().toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'});
+    div.innerHTML = `<div class="date">${today}</div><div>${text.replace(/</g,'&lt;')}</div>`;
+    document.getElementById('logEntries').prepend(div);
+    document.getElementById('logInput').value = '';
+  }
+
+  // Tasks
+  function submitTask() {
+    const text = document.getElementById('taskInput').value.trim();
+    if (!text) return;
+    const list = document.getElementById('taskList');
+    if (list.querySelector('p')) list.innerHTML = '';
+    const div = document.createElement('div');
+    div.style.cssText = 'padding:0.6rem 0;border-bottom:1px solid #2a2a2a;';
+    div.innerHTML = `<strong>New task:</strong> ${text.replace(/</g,'&lt;')}`;
+    list.prepend(div);
+    document.getElementById('taskInput').value = '';
+    alert('Task submitted for George. In a live version this would notify him or auto-accept.');
+  }
+
+  // Chastity update
+  function updateLock() {
+    const days = prompt('How many days locked?', '47');
+    if (days) {
+      document.getElementById('lockDays').textContent = 'Locked ' + days + ' days';
+      localStorage.setItem('gt_lock', days);
+    }
+  }
+  const savedLock = localStorage.getItem('gt_lock');
+  if (savedLock) document.getElementById('lockDays').textContent = 'Locked ' + savedLock + ' days';
+</script>
+</body>
+</html>
